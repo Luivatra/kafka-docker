@@ -30,4 +30,4 @@ jobs:
       - 
         name: Build/push kafka docker image     
         if: success()      
-        run: docker buildx build --platform ${DOCKER_TARGET_PLATFORM} --tag luivatra/kafka:latest --output type=image,push=true
+        run: docker buildx build --platform ${DOCKER_TARGET_PLATFORM} --tag luivatra/kafka:latest --output type=image,push=true .
